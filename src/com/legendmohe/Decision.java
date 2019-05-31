@@ -54,7 +54,7 @@ public class Decision {
             return this;
         }
 
-        public <E, R> R make(E event) {
+        public <E, R> R getResult(E event) {
             Collections.sort(mDecisions, new Comparator<MakeDecision>() {
                 @Override
                 public int compare(MakeDecision o1, MakeDecision o2) {

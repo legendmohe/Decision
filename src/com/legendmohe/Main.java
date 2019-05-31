@@ -46,7 +46,7 @@ public class Main {
         });
 
         Integer result = Decision.forEvent("touch")
-                .make(new TouchEvent(null, null, null, -1, false, false, false, false));
+                .getResult(new TouchEvent(null, null, null, -1, false, false, false, false));
         System.out.println("result=" + result);
 
         Decision.clear();
